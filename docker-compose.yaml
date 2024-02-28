@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  postgresql:
+    image: postgres:12.18-bullseye
+    environment:
+      POSTGRES_DB: fluentd_test
+      POSTGRES_USER: fluentd
+      POSTGRES_PASSWORD: fluentd
+    ports:
+    - 5432:5432
